@@ -1,0 +1,802 @@
+/*===RESET==*/
+* { margin: 0; padding: 0; border: none; outline: none; box-sizing: border-box;}
+
+body{background-color:#fff; font-family: 'Quicksand', sans-serif}
+/*body{background-color:#fff; font-family: 'Lato', sans-serif;}*/
+a{text-decoration: none}
+ul{list-style: none}
+img{max-width: 100%}
+
+.clearfix:before, .clearfix:after {
+    content: "";    
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/*===CONTAINER==*/
+.container{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 2% 2% 5% 2%;
+}
+
+.container_menu {
+    width: 100%;
+    float: left;
+    padding: 0.5% 2% 0.5% 2%;
+    text-align: center;
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    z-index: 9999;
+}
+
+/*===BG COLORS==*/
+.bg-color-a{
+    background-color: #6F1E51;
+}
+.color-a{
+    color: #6F1E51;
+}
+.bg-gradient {
+    background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+.bg-black{
+    background-color: #000;
+}s
+.bg-white{
+    background-color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+/*===HELLPERS==*/
+.radius {
+    border-radius: 5px;
+}
+.logo {float:left;font-family: 'Lato', sans-serif;}
+.logo a {
+	text-transform:uppercase;
+	line-height:60px;
+	font-size:1.2em;
+}
+.logo a span {
+	display:inline-block;
+	padding-right:12px;
+}
+
+.logo a span.b1 {font-weight:700; }
+.logo a span.b2 {font-weight:500; }
+.logo a span.b3 {font-weight:400; }
+.logo a span.b4 {font-weight:300; }
+.logo a span.b5 {font-weight:100; }
+
+.altura{
+    height: 450px;
+}
+
+.btn-menu{
+    float: right;
+    color: #130400;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*==H==*/
+h1{
+    line-height: 4em;
+    text-align: left;
+    font-weight: 600;
+    font-family:'Lato', sans-serif;
+}
+h1 b{
+    font-weight: 300;   
+}    
+
+h5{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 15px;
+    color: #130400;
+}
+.certificado-article h5:hover{
+    color:#9F3158;
+}   
+
+h4{
+    line-height: 2em;
+    text-align: left;
+    color: #130400;
+    font-size: 1.1em;
+    font: normal normal normal 30px/1.4em lulo-clean-w01-one-bold,sans-serif;
+
+}
+/*===MENU==*/
+
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9); 
+    top: 0;
+    left: 0;   
+}
+
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu li{
+    padding: 1.5%;
+}
+
+.menu li a {
+    font-size: 2em;
+    color: #fff;
+    padding: 1.5% 3%;
+    font-weight: 300;
+}
+
+.btn-close{
+    font-size: 2em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 4%;
+}
+
+/*===BANNER==*/
+.title {
+    margin-top: 45%;
+    padding: 0% 5% 0% 5%;
+    font-family: 'Lato', sans-serif;
+}
+
+.title h2 {
+    font-size: 1.7em;
+    color:#fff;     
+    font-weight: 600;
+    text-transform: uppercase;
+    animation-duration:3s;
+}
+.banner{
+    height: 400px;
+    background: url(../images/roberta1.JPG) no-repeat fixed;
+    margin-top: 3%;
+    background-size: cover;
+}
+.mySlides {display: none;}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*===SOBRE==*/
+
+.ladoA{
+    width: 100%;
+    float: left;
+    padding: 5% 8% 5% 8%;
+    line-height: 1.7em;
+    text-align: justify;        
+}
+
+.ladoB{
+    width: 100%;
+    float: right;
+}
+   
+.sobre p {font-weight: 300; font-size: 1.1em;}
+/*===PRODUTOS==*/
+.produto{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4%;    
+}
+.produtos .btn {
+    display: inline-block;
+    color: #fff;
+    width: 40%;
+    background: none;
+    padding: 15px 25px;
+    border: 1px solid #333;
+    font-size: 1.2em;
+    border-radius: 0px;
+    font-weight: 300;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #6F1E51;
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+.produtos .btn:hover {
+    background: transparent;
+    border: 1px solid #6F1E51;
+    color: #6F1E51;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*===CERTIFICADOS==*/
+
+.certificado-article{
+    width: 100%;
+    float: left;
+    margin-top: 2%;
+}
+.certificado-article-img{
+    height: 95px;
+}
+.inner p {
+    font-weight: 300;
+    font-size: 1em;
+    color: #717171 !important;
+    line-height: 1.2em;
+}
+.info{
+    text-align: center;
+    height: 210px;
+}
+
+.inner {
+    padding: 4%;
+}
+.inner a{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.inner p{
+    margin-top: 3%;
+}
+
+item {
+  position: relative;  
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 540px;
+}
+.item img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*== MISSAO VALOR ==*/
+.missao-valor{
+    position: absolute;
+    background-image: url(../images/roberta3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0c0c0c;
+    position: relative;
+    z-index: 9999;
+    height: 700px;
+}
+.missao-valor h4{
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5em;
+}
+.missao-valor p{
+    
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-weight: 500;
+    visibility: visible;
+    animation-delay: 0.6s;
+    animation-name: fadeInUp;
+}
+.marcatexto-v spam{
+    background: #1abc9c;
+    color: #fff;
+}
+.marcatexto-a spam{
+    background: #f6e58d;
+}
+/*== PRODUTOS ==*/
+.produto-lado-a{
+    width: 50%;
+    background-size: cover;
+    float: left;
+    margin: 0;
+}
+.produto-lado-b{
+    width: 45%;
+    float: right;
+}
+.produtos ul{
+    margin: 20px 0 50px 0;
+}
+.produtos ul li{
+    font-size: 1.5em;
+    color: #535c68;
+    line-height: 2em;
+    text-align: left;
+}
+.icon-produto{
+    padding-right: 0.5em;
+}
+/*== NEWSLETTER ==*/
+.newsletter {
+    padding: 0;
+    background-color: #130400;
+}
+.newsletter h1{
+    color: #fff;    
+}
+.newsletter h3{
+    color: #fff;
+    margin-top: 2%;
+    font-family: Lato', sans-serif;
+}
+.newsletter p{
+    color: #fff;
+    margin-top: 2%;
+}
+.newsletter form{
+    margin-top: 2%;
+}
+
+.newsletter input, textarea{
+    width: 100%;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 5%;
+    margin-top: 1%;
+}
+.newsletter textarea{
+        height: 100px;
+    }
+
+.newsletter button {
+    width: 100%;
+    color: #130400;
+    padding: 5%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.mensagem{
+    
+}
+/*==DEPOIMENTOS==*/
+.depoimentos{
+    position: relative;
+    background-image: url(../images/escritorio2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-color: #0c0c0c;
+    position: relative;
+    z-index: 9999;
+}
+    
+.depoimento{
+    width: 29%;
+    line-height: 1.6em;
+}
+.depoimento-left{
+    float: left;
+    margin-right:4.3em;  
+}
+.depoimento-right{
+    float: right;
+}
+
+.depoimentos p{ 
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #2d3436;
+    font-size: 0.9em;
+}
+.nome-depoimento{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+    margin-top: 1.6em;
+}
+
+.foto_clientes{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/*== RODAPE ==*/
+.icon{
+    margin-right: 6px;
+}
+.social-icons{
+    margin-top: 8%;
+}
+.social-icons a{
+    font-size: 2em;
+    color: #fff;
+    margin-right: 3%;
+}
+.social-icons a:last-child{
+    margin-right: 0;
+}
+
+/*.social-icons a:hover{
+    color: #9F3158;
+}*/
+
+.copyright {
+    margin-top: 2%; 
+    color: rgb(255,255,255);
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder {
+   color: #fff;
+}
+
+::-moz-placeholder {
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+.fadeIn {
+-webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+}
+/*== MOBILE FIRST ==*/
+/*== SMALL DEVICES - SMARTPHONES ==*/
+
+@media screen and (min-width:480px){
+    .logo a {
+	font-size:1.2em;
+    }
+    
+    .logo{
+        float: left;
+        padding: 0;
+    }    
+    .logo p {
+        font-size: 1.2em;
+        padding: 0;
+        text-transform: uppercase;
+        font-weight: 900;        
+    }
+    .title {
+        margin-top: 35%;
+        padding: 0% 5% 0% 5%;
+    }
+    .title h2 {
+        font-size: 1.7em;     
+        font-weight: 600;
+    }
+    .banner{
+        height: 400px;
+        background: url(../images/roberta1.JPG) no-repeat fixed;
+        margin-top: 3%;
+        background-size: cover;
+    }
+    .banner-produtos{
+        height: 400px;
+        margin-top: 5%;
+    }
+    .certificado-article{
+        width: 49%;
+        float: left;
+    }
+    .certificado-article:nth-child(2){
+        margin-right: 2%;
+    }
+    .produto:nth-child(4){
+        margin-right: 2%;
+    }
+    .produto:nth-child(6){
+        margin-right: 2%;
+    }
+    .altura{
+    height: 550px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .logo a {
+	font-size:1.3em;
+    }    
+    .container{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 10% 5% 10%;
+    }
+    .title {
+    margin-top: 30%;
+    padding: 0% 5% 0% 5%;
+    }
+    .title h2 {
+        font-size: 2em;
+        font-weight: 600;
+
+    }
+    .title spam {
+        font-size: 2em;
+        color:#fff;     
+        font-weight: 600;
+        text-transform: uppercase;
+
+    }
+    .banner{
+        background: url(../images/roberta1.JPG) no-repeat fixed;
+        margin-top: 3%;
+        background-size:contain;
+    }
+    .produto{
+        width: 49%;
+        float: left;
+    }
+    .produto:nth-child(2){
+        margin-right: 2%;
+    }
+    .produto:nth-child(4){
+        margin-right: 2%;
+    }
+    .produto h4:hover{
+    color: #9F3158;   
+    }
+    .newsletter-ajuste{
+        margin-top: 6%;
+    }
+
+    .newsletter h3{
+        font-size: 1.5em;
+        color: #fff;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    .newsletter input, textarea{
+        width: 100%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+        margin-top: 2%;
+    }
+    .newsletter textarea{
+        height: 100px;
+    }
+    .newsletter button {
+        width: 100%;
+        padding: 2%;
+        float: right;
+        margin-top: 2%;
+        color: #130400;
+        font-size: 20px;
+    }
+    .altura{
+    height: 550px;
+    }
+}
+
+@media screen and (min-width:960px){
+    .logo a {
+	font-size:1.5em;
+    }
+    .banner{
+    height: 750px;
+    background: url(../images/roberta1.JPG) no-repeat fixed;
+    background-size: cover;
+    margin-top: 3%;
+    }
+    .title h2 {
+        font-size: 2.5em;  
+        font-weight: 600;
+    }
+    .container{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 5% 10% 1% 10%;
+    }
+    .container_menu {
+    width: 100%;
+    float: left;
+    padding: 0% 10%;
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
+    .ladoA{
+    width: 50%;
+    float: left;
+    padding: 5% 3% 5% 10%;
+    line-height: 1.7em;
+    text-align: justify;        
+    }
+
+    .ladoB{
+    width: 50%;
+    float: right;
+    }
+    .title {
+    margin-top: 20%;
+    padding: 0% 5% 0% 5%;
+    }
+    .title spam {        
+        font-size: 3em;
+        color:#fff;     
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+   
+    .produto{
+        width: 32%;
+        float: left;
+    }
+    .produto:nth-child(2){
+        margin-right: 2%;
+    }
+    .produto:nth-child(3){
+        margin-right: 0;
+        float: right;
+    }
+    .certificado-article{
+        width: 32%; 
+        float: left;
+        margin-top: 3%;
+    }
+    .certificado-article:nth-child(2){
+        margin-right: 2%;
+    }
+    .certificado-article:nth-child(5){
+        margin-right: 2%;
+    }  
+    .altura{
+    height: 550px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .logo a {
+	font-size:1.5em;
+    }    
+    .banner{
+    height: 750px;
+    background: url(../images/roberta1.JPG) no-repeat fixed;
+    background-size: cover;
+    margin-top: 3%;
+    }
+    .title h2 {
+        font-size: 2.5em;   
+        font-weight: 600;
+     }
+    .container{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 10% 5% 10%;
+    }
+    .container_menu {
+    width: 100%;
+    float: left;
+    padding: 0% 10%;
+    text-align: center;
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    z-index: 99999; 
+    }
+
+    .ladoA{
+    width: 50%;
+    float: left;
+    padding: 5% 3% 5% 10%;
+    line-height: 1.7em;
+    text-align: justify;        
+    }
+    .btn-menu{
+        display: none;
+    }
+    .btn-close {
+        display: none;
+    }
+    .menu {
+        width: auto;
+        height: 56px;
+        line-height:56px;
+        float: right;
+        background-color: #fff;
+        display: block;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;        
+    }
+    .menu li a{
+        color: #130400;
+        font-size: 1.1em;
+        padding: 15px;
+        font-weight: 300;        
+    }
+    .menu li a:hover{
+        border-bottom:3px solid #273c75;
+    }
+    .altura{
+    height: 600px;
+    }
+    
+    .missao-a{
+        margin-top: 10em;
+        width: 35%;
+        position: relative;
+        float: left;
+        margin-right: 5em;
+    }
+    .missao-b{
+        margin-top: 10em;
+        width: 35%;
+        position: relative;
+        float: right;
+    }
+}
+
